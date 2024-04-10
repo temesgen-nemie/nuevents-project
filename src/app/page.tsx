@@ -1,10 +1,19 @@
 import Image from "next/image";
+import { cookies } from "next/headers";
+
+async function getCookieData() {
+  const cookieData = cookies().getAll();
+  return new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(cookieData);
+    }, 1000)
+  );
+}
 
 export default function Home() {
   return (
     <div className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
       <h1 className="font-bold text-center mt-10">Home Page</h1>
-
       <br />
       <hr />
       <h1 className="font-bold text-center mt-10">Sample Events</h1>
@@ -12,10 +21,12 @@ export default function Home() {
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto">
         <li className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="relative">
-            <img
+            <Image
               src="/nu-events-logo.png"
               alt="Card 1"
-              className="w-full h-40 object-cover"
+              width={400}
+              height={300}
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-40"></div>
             <div className="absolute inset-0 flex items-center justify-center">
@@ -30,10 +41,12 @@ export default function Home() {
 
         <li className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="relative">
-            <img
+            <Image
               src="/nu-events-logo.png"
               alt="Card 2"
-              className="w-full h-40 object-cover"
+              width={400}
+              height={300}
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-40"></div>
             <div className="absolute inset-0 flex items-center justify-center">
@@ -48,10 +61,12 @@ export default function Home() {
 
         <li className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="relative">
-            <img
+            <Image
               src="/nu-events-logo.png"
               alt="Card 3"
-              className="w-full h-40 object-cover"
+              width={400}
+              height={300}
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-40"></div>
             <div className="absolute inset-0 flex items-center justify-center">
@@ -66,10 +81,12 @@ export default function Home() {
 
         <li className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="relative">
-            <img
+            <Image
               src="/nu-events-logo.png"
               alt="Card 4"
-              className="w-full h-40 object-cover"
+              width={400}
+              height={300}
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-40"></div>
             <div className="absolute inset-0 flex items-center justify-center">

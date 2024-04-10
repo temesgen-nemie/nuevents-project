@@ -2,9 +2,20 @@ import { UserButton, auth } from "@clerk/nextjs";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { cookies } from "next/headers";
+
+async function getCookieData() {
+  const cookieData = cookies().getAll();
+  return new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(cookieData);
+    }, 1000)
+  );
+}
 
 export default function Header() {
   const { userId } = auth();
+
   return (
     <div className="bg-blue-500 text-neutral-100">
       <div className="container mx-auto flex items-center justify-between py-4 px-20">

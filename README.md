@@ -1,6 +1,7 @@
 Project Description
 
 This is a project built with Next.js, utilizing the create-next-app template.
+
 NU EVENTS is a software solution that helps individuals and businesses plan, organize, and execute events efficiently. 
 
 Getting Started

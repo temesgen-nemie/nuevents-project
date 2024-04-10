@@ -1,10 +1,12 @@
-Project Description
+# Project Description
 
 This is a project built with Next.js, utilizing the create-next-app template.
+# project name
 
-NU EVENTS is a software solution that helps individuals and businesses plan, organize, and execute events efficiently. 
+## NU EVENTS ![nu-event-logo](https://github.com/temesgen-nemie/nuevents-project/assets/119539072/10b51ba7-0a3d-4463-9b1c-f7c869fb91f8)
+a software solution that helps individuals and businesses plan, organize, and execute events efficiently. 
 
-Getting Started
+# Getting Started
 To run the development server, use one of the following commands:
 
 bash
